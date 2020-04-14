@@ -5,7 +5,7 @@ exports.insertDocument = (db, document, collection, callback) => {
     return coll.insert(document);
 };
 
-exports.findDocuments = (db,collection, callback) => {
+exports.findDocuments = (db, collection, callback) => {
     const coll = db.collection(collection);
     return coll.find({}).toArray();
 };

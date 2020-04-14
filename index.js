@@ -7,8 +7,6 @@ const dbname = 'conFusion';
 
 MongoClient.connect(url).then((client) => {
 
-    assert.equal(err, null);
-
     console.log('Connected correctly to server');
 
     const db = client.db(dbname);
